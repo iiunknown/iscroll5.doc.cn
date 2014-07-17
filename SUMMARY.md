@@ -8,7 +8,7 @@
 * [基本功能](basicfeatures.md)
 * [滚动条](scrollers.md)
 * [指示器](indicator.md)
-* [捕获](snap.md)
+* [对齐](snap.md)
 * [缩放](zoom.md)
 * [无限滚动](infinite.md)
 * [高级选项](advance.md)
