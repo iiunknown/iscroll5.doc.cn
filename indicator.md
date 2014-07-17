@@ -63,18 +63,14 @@ indicators: {
 <p><strong>Do not cross the streams. It would be bad!</strong> Do not mix the scrollbars syntax (<code>options.scrollbars</code>, <code>options.fadeScrollbars</code>, <code>options.interactiveScrollbars</code>, ...) with the indicators! Use one or the other.</p>
 </div>
 
-Have a look at the [minimap demo](http://lab.cubiq.org/iscroll5/demos/minimap/) to get a glance at the power of the `indicators` option.
 请参考[迷你地图示例](http://lab.cubiq.org/iscroll5/demos/minimap/)，你将看到`indicators`选项的神奇力量。
 
-The wittiest of you would have noticed that `indicators` is actually plural... Yes, exactly, passing an array of objects you can have a virtually infinite number of indicators. I don't know what you may need them for, but hey! who am I to argue about your scrollbar preferences?
 你应该已经注意到选项`indicators`是复数，是的，实际上，传递一个对象数组你可以得到一个虚拟的无限大小的指示器。我不知道你是否需要，但是，这里我是想你介绍参数设置，所以要提及此。
 
 ## <span id="parallax-scrolling">视差滚动</span>
 
-Parallax scrolling is just a *collateral damage* of the [Indicators](#indicators) functionality.
 视差滚动是[指示器](#indicators)功能的一个 *附属功能*
 
-An indicator is just a layer that follows the movement and animation applied to the main scroller. If you see it like that you'll understand the power behind this feature. To this add that you can have any number of indicators and the parallax scrolling is served.
 指示器是一个遵循主滚动条移动和动画的层。如果你了解它你就会理解这个功能背后的力量。增加这个功能你就可以创建任意数量的指示器和视差滚动。
 
 
@@ -82,56 +78,46 @@ An indicator is just a layer that follows the movement and animation applied to 
 
 ## 滚动的编程接口
 
-You silly! Of course you can scroll programmaticaly!
 当然还可以通过编程来进行滚动。
 
 ### scrollTo(x, y, time, easing)
 
-Say your iScroll instance resides into the `myScroll` variable. You can easily scroll to any position with the following syntax:
 对应存在的一个叫做`myScroll`的iScroll实例，可以通过下面的方式滚动到任意的位置：
 
 ```js
 myScroll.scrollTo(0, -100);
 ```
 
-That would scroll down by 100 pixels. Remember: 0 is always the top left corner. To scroll you have to pass negative numbers.
 通过上面的方式将向下滚动100个像素。记住：0永远是左上角。需要滚动你必须传递负数。
 
-`time` and `easing` are optional. They regulates the duration (in ms) and the easing function of the animation respectively.
 `time` 和 `easing`是可选项。他们控制滚动周期（毫秒级别）和动画的擦除效果。
 
-The easing functions are available in the `IScroll.utils.ease` object. For example to apply a 1 second elastic easing you'd do:
 擦除功能是一个有效的`IScroll.utils.ease`对象。例如应用一个一秒的经典擦除动画你应该这么做：
 
 ```js
     myScroll.scrollTo(0, -100, 1000, IScroll.utils.ease.elastic);
 ```
-The available options are: `quadratic`, `circular`, `back`, `bounce`, `elastic`.
+
 擦除动画的类型选项有：`quadratic`, `circular`, `back`, `bounce`, `elastic`。
 
 ### scrollBy(x, y, time, easing)
 
-Same as above but X and Y are relative to the current position.
 和上面一个方法类似，但是可以传递X和Y的值从当前位置进行滚动。
 
 ```js
 myScroll.scrollBy(0, -10);
 ```
-Would scroll 10 pixels down. If you are at -100, you'll end up at -110.
+
 上面这个语句将在当前位置向下滚动10个像素。如果你当前所在位置为-100，那么滚动结束后位置为-110.
 
 ### scrollToElement(el, time, offsetX, offsetY, easing)
 
-You're gonna like this. Sit tight.
 这是一个很有用的方法，你会喜欢它的。
 
-The only mandatory parameter is `el`. Pass an element or a selector and iScroll will try to scroll to the top/left of that element.
 在这个方法中只有一个强制的参数就是`el`。传递一个元素或者一个选择器，iScroll将尝试滚动到这个元素的左上角位置。
 
-`time` is optional and sets the animation duration.
 `time`是可选项，用于设置动画周期。
 
-`offsetX` and `offsetY` define an offset in pixels, so that you can scroll to that element plus a the specified offset. Not only that. If you set them to `true` the element will be centered on screen. Refer to the [scroll to element](http://lab.cubiq.org/iscroll5/demos/scroll-to-element/) example.
 `offsetX` 和 `offsetY`定义像素级的偏移量，所以你可以滚动到元素并且加上特别的偏移量。但并不仅限于此。如果把这两个参数设置为`true`，元素将会位于屏幕的中间。请参考例子 [滚动到元素](http://lab.cubiq.org/iscroll5/demos/scroll-to-element/) example。
 
-`easing` works the same way as per the **scrollTo** method.
+`easing`参数和**scrollTo**方法里的一样。
