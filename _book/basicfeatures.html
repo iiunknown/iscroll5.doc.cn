@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>基本功能 | iScroll 5 API 中文版</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="iiunknown">
+    
+    
+    <link rel="next" href="./scrollers.html" />
+    
+    
+    <link rel="prev" href="./core.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="iiunknown/iscroll5.doc.cn" data-level="6" data-basepath="." data-revision="1405607853214">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >iScroll 5 API 中文版</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown/iscroll5.doc.cn/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown/iscroll5.doc.cn/edit/master/basicfeatures.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="versions.html">
+            
+            <a href="./versions.html">
+                <i class="fa fa-check"></i> <b>1.</b> 版本
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="gettingstart.html">
+            
+            <a href="./gettingstart.html">
+                <i class="fa fa-check"></i> <b>2.</b> 入门
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="init.html">
+            
+            <a href="./init.html">
+                <i class="fa fa-check"></i> <b>3.</b> 初始化
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="config.html">
+            
+            <a href="./config.html">
+                <i class="fa fa-check"></i> <b>4.</b> 配置
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="core.html">
+            
+            <a href="./core.html">
+                <i class="fa fa-check"></i> <b>5.</b> 核心
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="basicfeatures.html">
+            
+            <a href="./basicfeatures.html">
+                <i class="fa fa-check"></i> <b>6.</b> 基本功能
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="scrollers.html">
+            
+            <a href="./scrollers.html">
+                <i class="fa fa-check"></i> <b>7.</b> 滚动条
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="indicator.html">
+            
+            <a href="./indicator.html">
+                <i class="fa fa-check"></i> <b>8.</b> 指示器
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="snap.html">
+            
+            <a href="./snap.html">
+                <i class="fa fa-check"></i> <b>9.</b> 捕获
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="zoom.html">
+            
+            <a href="./zoom.html">
+                <i class="fa fa-check"></i> <b>10.</b> 缩放
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="infinite.html">
+            
+            <a href="./infinite.html">
+                <i class="fa fa-check"></i> <b>11.</b> 无限滚动
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="advance.html">
+            
+            <a href="./advance.html">
+                <i class="fa fa-check"></i> <b>12.</b> 高级选项
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="refresh.html">
+            
+            <a href="./refresh.html">
+                <i class="fa fa-check"></i> <b>13.</b> 刷新
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="customevents.html">
+            
+            <a href="./customevents.html">
+                <i class="fa fa-check"></i> <b>14.</b> 自定义事件
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="keybindings.html">
+            
+            <a href="./keybindings.html">
+                <i class="fa fa-check"></i> <b>15.</b> 按键绑定
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="scrollerinfo.html">
+            
+            <a href="./scrollerinfo.html">
+                <i class="fa fa-check"></i> <b>16.</b> 滚动条信息
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="distory.html">
+            
+            <a href="./distory.html">
+                <i class="fa fa-check"></i> <b>17.</b> 销毁
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 35.294117647058826%;min-width: 29.41176470588235%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./versions.html" title="版本" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="./gettingstart.html" title="入门" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="./init.html" title="初始化" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="./config.html" title="配置" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="./core.html" title="核心" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="./basicfeatures.html" title="基本功能" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="./scrollers.html" title="滚动条" class="chapter  new-chapter" data-progress="7" style="left: 41.1764705882353%;"></a>
+    
+        <a href="./indicator.html" title="指示器" class="chapter  new-chapter" data-progress="8" style="left: 47.05882352941177%;"></a>
+    
+        <a href="./snap.html" title="捕获" class="chapter  new-chapter" data-progress="9" style="left: 52.94117647058823%;"></a>
+    
+        <a href="./zoom.html" title="缩放" class="chapter  " data-progress="10" style="left: 58.8235294117647%;"></a>
+    
+        <a href="./infinite.html" title="无限滚动" class="chapter  " data-progress="11" style="left: 64.70588235294117%;"></a>
+    
+        <a href="./advance.html" title="高级选项" class="chapter  " data-progress="12" style="left: 70.58823529411765%;"></a>
+    
+        <a href="./refresh.html" title="刷新" class="chapter  " data-progress="13" style="left: 76.47058823529412%;"></a>
+    
+        <a href="./customevents.html" title="自定义事件" class="chapter  " data-progress="14" style="left: 82.3529411764706%;"></a>
+    
+        <a href="./keybindings.html" title="按键绑定" class="chapter  " data-progress="15" style="left: 88.23529411764706%;"></a>
+    
+        <a href="./scrollerinfo.html" title="滚动条信息" class="chapter  " data-progress="16" style="left: 94.11764705882354%;"></a>
+    
+        <a href="./distory.html" title="销毁" class="chapter  " data-progress="17" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_10">
+                    
+                        <h2 id="-">基本功能</h2>
+<h3 id="-small-options-small-bounce"><small>options.</small>bounce</h3>
+<p>当滚动器到达容器边界时他将执行一个小反弹动画。在老的或者性能低的设备上禁用反弹对实现平滑的滚动有帮助。</p>
+<p>默认值：<code>true</code></p>
+<h3 id="-small-options-small-click"><small>options.</small>click</h3>
+<p>为了重写原生滚动条，iScroll禁止了一些默认的浏览器行为，比如鼠标的点击。如果你想你的应用程序响应<em>click</em>事件，那么该设置次属性为<code>true</code>。请注意，建议使用自定义的<code>tap</code> 事件来代替它（见下面）。</p>
+<p>默认属性：<code>false</code></p>
+<h3 id="-small-options-small-disablemouse-br-small-options-small-disablepointer-br-small-options-small-disabletouch"><small>options.</small>disableMouse<br/><small>options.</small>disablePointer<br/><small>options.</small>disableTouch</h3>
+<p>默认情况下，iScroll肩痛所有的指针事件，并且对这些事件中第一个被触发的做出反应。这看上去是浪费资源，但是在大量的浏览器/设备上兼容，特定的事件侦测证明是无效的，所以<em>listen-to-all</em>是一个安全的做法。</p>
+<p>如果你有一种设备侦测的内部机制，或者你知道你的脚本将在什么地方运行，你可以把你不需要的事件禁用（鼠标，指针或者触摸事件）。</p>
+<p>下面的例子是禁用鼠标和指针事件：</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myScroll = <span class="hljs-keyword">new</span> IScroll(<span class="hljs-string">'#wrapper'</span>, {
+    disableMouse: <span class="hljs-literal">true</span>,
+    disablePointer: <span class="hljs-literal">true</span>
+});
+</code></pre>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-eventpassthrough"><small>options.</small>eventPassthrough</h3>
+<p>有些时候你想保留原生纵向的滚动条但想为横向滚动条增加iScroll功能（比如走马灯）。设置这个属性为<code>true</code>并且iScroll区域只将影响横向滚动，纵向滚动将滚动整个页面。</p>
+<p>在移动设备上访问<a href="http://lab.cubiq.org/iscroll5/demos/event-passthrough/" target="_blank">event passthrough demo</a>。注意，这个值也可以设置为<code>&#39;horizontal&#39;</code>，其作用和上面介绍的相反（横向滚动条保持原生，纵向滚动条使用iScroll）。</p>
+<h3 id="-small-options-small-freescroll"><small>options.</small>freeScroll</h3>
+<p>此属性针对于两个两个纬度的滚动条（当你需要横向和纵向滚动条）。通常情况下你开始滚动一个方向上的滚动条，另外一个方向上会被锁定不动。有些时候，你需要无约束的移动（横向和纵向可以同时响应），在这样的情况下此属性需要设置为<code>true</code>。请参考 <a href="http://lab.cubiq.org/iscroll5/demos/2d-scroll/" target="_blank">2D scroll demo</a>。</p>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-keybindings"><small>options.</small>keyBindings</h3>
+<p>此属性为<code>true</code>时激活键盘（和远程控制）绑定。请参考下面的<a href="#key-bindings">Key bindings</a>内容。</p>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-invertwheeldirection"><small>options.</small>invertWheelDirection</h3>
+<p>当鼠标滚轮支持激活后，在有些情况下需要反转滚动的方向。（比如，鼠标滚轮向下滚动条向上，反之亦然）。</p>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-momentum"><small>options.</small>momentum</h3>
+<p>在用户快速触摸屏幕时，你可以开/关势能动画。关闭此功能将大幅度提升性能。</p>
+<p>默认值：<code>true</code></p>
+<h3 id="-small-options-small-mousewheel"><small>options.</small>mouseWheel</h3>
+<p>侦听鼠标滚轮事件。</p>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-preventdefault"><small>options.</small>preventDefault</h3>
+<p>当事件触发时师傅执行<code>preventDefault()</code>。此属性应该设置为<code>true</code>，除非你真的知道你需要怎么做。</p>
+<p>请参考<a href="#advanced-features">Advanced features</a>中的<code>preventDefaultException</code>，可以获取更多控制preventDefault行为的信息。</p>
+<p>Default: <code>true</code>
+默认值：<code>true</code></p>
+<h3 id="-small-options-small-scrollbars"><small>options.</small>scrollbars</h3>
+<p>是否显示为默认的滚动条。更多信息请查看<a href="#scrollbar">Scrollbar</a></p>
+<p>默认值：<code>false</code></p>
+<h3 id="-small-options-small-scrollx-br-small-options-small-scrolly"><small>options.</small>scrollX<br/><small>options.</small>scrollY</h3>
+<p>默认情况下只有纵向滚动条可以使用。如果你需要使用横向滚动条，需要将<code>scrollX</code> 属性值设置为 <code>true</code>。请参考示例<a href="http://lab.cubiq.org/iscroll5/demos/horizontal/" target="_blank">horizontal demo</a>。</p>
+<p>也可以参考<strong>freeScroll</strong>选项。</p>
+<p>默认值：<code>scrollX: false</code>，<code>scrollY: true</code></p>
+<p>注意属性 <code>scrollX/Y: true</code> 与<code>overflow: auto</code>有相同的效果。设置一个方向上的值为 <code>false</code> 可以节省一些检测的时间和CPU的计算周期。</p>
+<h3 id="-small-options-small-startx-br-small-options-small-starty"><small>options.</small>startX<br/><small>options.</small>startY</h3>
+<p>默认情况下iScroll从<code>0, 0</code> (top left)位置开始，通过此属性可以让滚动条从不同的位置开始滚动。</p>
+<p>默认值：<code>0</code></p>
+<h3 id="-small-options-small-tap"><small>options.</small>tap</h3>
+<p>设置此属性为<code>true</code>，当滚动区域被点击或者触摸但并没有滚动时，可以让iScroll抛出一个自定义的<code>tap</code>事件。</p>
+<p>这是处理与可以点击元素之间的用户交互的建议方式。侦听<code>tap</code>事件和侦听标准事件的方式一致。示例如下：</p>
+<pre><code class="lang-js">element.addEventListener(<span class="hljs-string">'tap'</span>, doSomething, <span class="hljs-literal">false</span>); \\ Native
+$(<span class="hljs-string">'#element'</span>).on(<span class="hljs-string">'tap'</span>, doSomething); \\ jQuery
+</code></pre>
+<p>你可以通过传递一个字符串来自定义事件名称。比如：</p>
+<pre><code class="lang-js">tap: <span class="hljs-string">'myCustomTapEvent'</span>
+</code></pre>
+<p>在这个示例里你应该侦听名为<code>myCustomTapEvent</code>的事件。</p>
+<p>默认值：<code>false</code></p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./core.html" class="navigation navigation-prev " aria-label="Previous page: 核心"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./scrollers.html" class="navigation navigation-next " aria-label="Next page: 滚动条"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

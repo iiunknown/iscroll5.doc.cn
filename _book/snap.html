@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>捕获 | iScroll 5 API 中文版</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="iiunknown">
+    
+    
+    <link rel="next" href="./zoom.html" />
+    
+    
+    <link rel="prev" href="./indicator.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="iiunknown/iscroll5.doc.cn" data-level="9" data-basepath="." data-revision="1405607853214">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/iiunknown/iscroll5.doc.cn/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >iScroll 5 API 中文版</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown/iscroll5.doc.cn/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/iiunknown/iscroll5.doc.cn/edit/master/snap.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="versions.html">
+            
+            <a href="./versions.html">
+                <i class="fa fa-check"></i> <b>1.</b> 版本
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="gettingstart.html">
+            
+            <a href="./gettingstart.html">
+                <i class="fa fa-check"></i> <b>2.</b> 入门
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="init.html">
+            
+            <a href="./init.html">
+                <i class="fa fa-check"></i> <b>3.</b> 初始化
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="config.html">
+            
+            <a href="./config.html">
+                <i class="fa fa-check"></i> <b>4.</b> 配置
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="core.html">
+            
+            <a href="./core.html">
+                <i class="fa fa-check"></i> <b>5.</b> 核心
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="basicfeatures.html">
+            
+            <a href="./basicfeatures.html">
+                <i class="fa fa-check"></i> <b>6.</b> 基本功能
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="scrollers.html">
+            
+            <a href="./scrollers.html">
+                <i class="fa fa-check"></i> <b>7.</b> 滚动条
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="indicator.html">
+            
+            <a href="./indicator.html">
+                <i class="fa fa-check"></i> <b>8.</b> 指示器
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="snap.html">
+            
+            <a href="./snap.html">
+                <i class="fa fa-check"></i> <b>9.</b> 捕获
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="zoom.html">
+            
+            <a href="./zoom.html">
+                <i class="fa fa-check"></i> <b>10.</b> 缩放
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="infinite.html">
+            
+            <a href="./infinite.html">
+                <i class="fa fa-check"></i> <b>11.</b> 无限滚动
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="advance.html">
+            
+            <a href="./advance.html">
+                <i class="fa fa-check"></i> <b>12.</b> 高级选项
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="refresh.html">
+            
+            <a href="./refresh.html">
+                <i class="fa fa-check"></i> <b>13.</b> 刷新
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="customevents.html">
+            
+            <a href="./customevents.html">
+                <i class="fa fa-check"></i> <b>14.</b> 自定义事件
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="keybindings.html">
+            
+            <a href="./keybindings.html">
+                <i class="fa fa-check"></i> <b>15.</b> 按键绑定
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="scrollerinfo.html">
+            
+            <a href="./scrollerinfo.html">
+                <i class="fa fa-check"></i> <b>16.</b> 滚动条信息
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="distory.html">
+            
+            <a href="./distory.html">
+                <i class="fa fa-check"></i> <b>17.</b> 销毁
+            </a>
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 52.94117647058823%;min-width: 47.05882352941177%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./versions.html" title="版本" class="chapter done new-chapter" data-progress="1" style="left: 5.882352941176471%;"></a>
+    
+        <a href="./gettingstart.html" title="入门" class="chapter done new-chapter" data-progress="2" style="left: 11.764705882352942%;"></a>
+    
+        <a href="./init.html" title="初始化" class="chapter done new-chapter" data-progress="3" style="left: 17.647058823529413%;"></a>
+    
+        <a href="./config.html" title="配置" class="chapter done new-chapter" data-progress="4" style="left: 23.529411764705884%;"></a>
+    
+        <a href="./core.html" title="核心" class="chapter done new-chapter" data-progress="5" style="left: 29.41176470588235%;"></a>
+    
+        <a href="./basicfeatures.html" title="基本功能" class="chapter done new-chapter" data-progress="6" style="left: 35.294117647058826%;"></a>
+    
+        <a href="./scrollers.html" title="滚动条" class="chapter done new-chapter" data-progress="7" style="left: 41.1764705882353%;"></a>
+    
+        <a href="./indicator.html" title="指示器" class="chapter done new-chapter" data-progress="8" style="left: 47.05882352941177%;"></a>
+    
+        <a href="./snap.html" title="捕获" class="chapter done new-chapter" data-progress="9" style="left: 52.94117647058823%;"></a>
+    
+        <a href="./zoom.html" title="缩放" class="chapter  " data-progress="10" style="left: 58.8235294117647%;"></a>
+    
+        <a href="./infinite.html" title="无限滚动" class="chapter  " data-progress="11" style="left: 64.70588235294117%;"></a>
+    
+        <a href="./advance.html" title="高级选项" class="chapter  " data-progress="12" style="left: 70.58823529411765%;"></a>
+    
+        <a href="./refresh.html" title="刷新" class="chapter  " data-progress="13" style="left: 76.47058823529412%;"></a>
+    
+        <a href="./customevents.html" title="自定义事件" class="chapter  " data-progress="14" style="left: 82.3529411764706%;"></a>
+    
+        <a href="./keybindings.html" title="按键绑定" class="chapter  " data-progress="15" style="left: 88.23529411764706%;"></a>
+    
+        <a href="./scrollerinfo.html" title="滚动条信息" class="chapter  " data-progress="16" style="left: 94.11764705882354%;"></a>
+    
+        <a href="./distory.html" title="销毁" class="chapter  " data-progress="17" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_18">
+                    
+                        <h2 id="snap">Snap</h2>
+
+<p>iScroll can snap to fixed positions and elements.</p>
+<h3 id="-small-options-small-snap"><small>options.</small>snap</h3>
+<p>The simplest snap config is as follow:</p>
+<pre><code>var myScroll = new IScroll(&#39;#wrapper&#39;, {
+    snap: true
+});
+</code></pre><p>This would automatically split the scroller into pages the size of the container.</p>
+<p><code>snap</code> also takes a string as a value. The string will be the selector to the elements the scroller will be snapped to. So the following</p>
+<pre><code>var myScroll = new IScroll(&#39;#wrapper&#39;, {
+    snap: &#39;li&#39;
+});
+</code></pre><p>would snap to each and every <code>LI</code> tag.</p>
+<p>To help you navigate through the snap points iScroll grants access to a series of interesting methods.</p>
+<h3 id="gotopage-x-y-time-easing-">goToPage(x, y, time, easing)</h3>
+<p><code>x</code> and <code>y</code> represent the page number you want to scroll to in the horizontal or vertical axes (yeah, it&#39;s the plural of <em>axis</em>, I checked). If the scroller in mono-dimensional, just pass <code>0</code> to the axis you don&#39;t need.</p>
+<p><code>time</code> is the duration of the animation, <code>easing</code> the easing function used to scroll to the point. Refer to the <strong>option.bounceEasing</strong> in the <a href="#advanced-features">Advanced features</a>. They are both optional.</p>
+<pre><code>myScroll.goToPage(10, 0, 1000);
+</code></pre><p>This would scroll to the 10th page on the horizontal axis in 1 second.</p>
+<h3 id="next-br-prev-">next()<br/>prev()</h3>
+<p>Go to the next and previous page based on current position.</p>
+<h2 id="zoom">Zoom</h2>
+
+<p>To use the pinch/zoom functionality you better use the <code>iscroll-zoom.js</code> script.</p>
+<h3 id="-small-options-small-zoom"><small>options.</small>zoom</h3>
+<p>Set this to <code>true</code> to activate zoom.</p>
+<p>Default: <code>false</code></p>
+<h3 id="-small-options-small-zoommax"><small>options.</small>zoomMax</h3>
+<p>Maximum zoom level.</p>
+<p>Default: <code>4</code></p>
+<h3 id="-small-options-small-zoommin"><small>options.</small>zoomMin</h3>
+<p>Minimum zoom level.</p>
+<p>Default: <code>1</code></p>
+<h3 id="-small-options-small-zoomstart"><small>options.</small>zoomStart</h3>
+<p>Starting zoom level.</p>
+<p>Default: <code>1</code></p>
+<h3 id="-small-options-small-wheelaction"><small>options.</small>wheelAction</h3>
+<p>Wheel action can be set to <code>&#39;zoom&#39;</code> to have the wheel regulate the zoom level instead of scrolling position.</p>
+<p>Default: <code>undefined</code> (ie: the mouse wheel scrolls)</p>
+<p>To sum up, a nice zoom config would be:</p>
+<pre><code>myScroll = new IScroll(&#39;#wrapper&#39;, {
+    zoom: true,
+    mouseWheel: true,
+    wheelAction: &#39;zoom&#39;
+});
+</code></pre><div class="important">
+<p>The zoom is performed with CSS transform. iScroll can zoom only on browsers that support that.</p>
+</div>
+
+<div class="tip">
+<p>Some browsers (notably webkit based ones) take a snapshot of the zooming area as soon as they are placed on the hardware compositing layer (say as soon as you apply a transform to them). This snapshot is used as a texture for the zooming area and it can hardly be updated. This means that your texture will be based on elements at <strong>scale 1</strong> and zooming in will result in blurred, low definition text and images.</p>
+
+<p>A simple solution is to load content at double (or triple) its actual resolution and scale it down inside a <code>scale(0.5)</code> div. This should be enough to grant you a better result. I hope to be able to post more demos soon</p>
+</div>
+
+<p>Refer to the <a href="http://lab.cubiq.org/iscroll5/demos/zoom/" target="_blank">zoom demo</a>.</p>
+<h3 id="zoom-scale-x-y-time-">zoom(scale, x, y, time)</h3>
+<p>Juicy method that lets you zoom programmatically.</p>
+<p><code>scale</code> is the zoom factor.</p>
+<p><code>x</code> and <code>y</code> the focus point, aka the center of the zoom. If not specified, the center of the screen will be used.</p>
+<p><code>time</code> is the duration of the animation in milliseconds (optional).</p>
+<h2 id="infinite-scrolling">Infinite scrolling</h2>
+
+<p>iScroll integrates a smart caching system that allows to handle of a virtually infinite amount of data using (and reusing) just a bunch of elements.</p>
+<p>Infinite scrolling is in an early stage of development and although it can be considered stable, it is not ready for wide consumption.</p>
+<p>Please review the <a href="http://lab.cubiq.org/iscroll5/demos/infinite/" target="_blank">infinite demo</a> and send your suggestions and bug reports.</p>
+<p>I will add more details as soon as the functionality evolves.</p>
+<h2 id="advanced-options">Advanced options</h2>
+
+<p>For the hardcore developer.</p>
+<h3 id="-small-options-small-bindtowrapper"><small>options.</small>bindToWrapper</h3>
+<p>The <code>move</code> event is normally bound to the document and not the scroll container. When you move the cursor/finger out of the wrapper the scrolling keeps going. This is usually what you want, but you can also bind the move event to wrapper itself. Doing so as soon as the pointer leaves the container the scroll stops.</p>
+<p>Default: <code>false</code></p>
+<h3 id="-small-options-small-bounceeasing"><small>options.</small>bounceEasing</h3>
+<p>Easing function performed during the bounce animation. Valid values are: <code>&#39;quadratic&#39;</code>, <code>&#39;circular&#39;</code>, <code>&#39;back&#39;</code>, <code>&#39;bounce&#39;</code>, <code>&#39;elastic&#39;</code>. See the <a href="http://lab.cubiq.org/iscroll5/demos/bounce-easing/" target="_blank">bounce easing demo</a>, drag the scroller down and release.</p>
+<p><code>bounceEasing</code> is a bit smarter than that. You can also feed a custom easing function, like so:</p>
+<pre><code>bounceEasing: {
+    style: &#39;cubic-bezier(0,0,1,1)&#39;,
+    fn: function (k) { return k; }
+}
+</code></pre><p>The above would perform a linear easing. The <code>style</code> option is used every time the animation is executed with CSS transitions, <code>fn</code> is used with <code>requestAnimationFrame</code>. If the easing function is too complex and can&#39;t be represented by a cubic bezier just pass <code>&#39;&#39;</code> (empty string) as <code>style</code>.</p>
+<p>Note that <code>bounce</code> and <code>elastic</code> can&#39;t be performed by CSS transitions.</p>
+<p>Default: <code>&#39;circular&#39;</code></p>
+<h3 id="-small-options-small-bouncetime"><small>options.</small>bounceTime</h3>
+<p>Duration in millisecond of the bounce animation.</p>
+<p>Default: <code>600</code></p>
+<h3 id="-small-options-small-deceleration"><small>options.</small>deceleration</h3>
+<p>This value can be altered to change the momentum animation duration/speed. Higher numbers make the animation shorter. Sensible results can be experienced starting with a value of <code>0.01</code>, bigger than that basically doesn&#39;t make any momentum at all.</p>
+<p>Default: <code>0.0006</code></p>
+<h3 id="-small-options-small-mousewheelspeed"><small>options.</small>mouseWheelSpeed</h3>
+<p>Set the speed of the mouse wheel.</p>
+<p>Default: <code>20</code></p>
+<h3 id="-small-options-small-preventdefaultexception"><small>options.</small>preventDefaultException</h3>
+<p>These are all the exceptions when <code>preventDefault()</code> would be fired anyway despite the <strong>preventDefault</strong> option value.</p>
+<p>This is a pretty powerful option, if you don&#39;t want to <code>preventDefault()</code> on all elements with <em>formfield</em> class name for example, you could pass the following:</p>
+<pre><code>preventDefaultException: { className: /(^|\s)formfield(\s|$)/ }
+</code></pre><p>Default: <code>{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ }</code>.</p>
+<h3 id="-small-options-small-resizepolling"><small>options.</small>resizePolling</h3>
+<p>When you resize the window iScroll has to recalculate elements position and dimension. This might be a pretty daunting task for the poor little fella. To give it some rest the polling is set to 60 milliseconds.</p>
+<p>By reducing this value you get better visual effect but the script becomes more aggressive on the CPU. The default value seems a good compromise.</p>
+<p>Default: <code>60</code></p>
+<h2 id="refresh">Mastering the refresh method</h2>
+
+<p>iScroll needs to know the exact dimensions of both the wrapper and the scroller. They are computed at start up but if your elements change in size, we need to tell iScroll that you are messing with the DOM.</p>
+<p>This is achieved by calling the <code>refresh</code> method with the right timing. Please follow me closely, understanding this will save you hours of frustration.</p>
+<p>Every time you touch the DOM the browser renderer repaints the page. Once this repaint has happened we can safely read the new DOM properties. The repaint phase is not instantaneous and it happens only at the end of the scope that triggered it. That&#39;s why we need to give the renderer a little rest before refreshing the iScroll.</p>
+<p>To ensure that javascript gets the updated properties you should defer the refreh with something like this:</p>
+<pre><code>ajax(&#39;page.php&#39;, onCompletion);
+
+function onCompletion () {
+    // Update here your DOM
+
+    setTimeout(function () {
+        myScroll.refresh();
+    }, 0);
+};
+</code></pre><p>We have placed the <code>refresh()</code> call into a zero timeout. That is likely all you need to correctly refresh the iScroll boundaries. There are other ways to wait for the repaint, but the zero-timeout has proven pretty solid.</p>
+<div class="tip">
+<p>Consider that if you have a very complex HTML structure you may give the browser some more rest and raise the timeout to 100 or 200 milliseconds.</p>
+
+<p>This is generally true for all the tasks that have to be done on the DOM. Always give the renderer some rest.</p>
+</div>
+
+<h2 id="custom-events">Custom events</h2>
+
+<p>iScroll also emits some useful custom events you can hook to.</p>
+<p>To register them you use the <code>on(type, fn)</code> method.</p>
+<pre><code>myScroll = new IScroll(&#39;#wrapper&#39;);
+myScroll.on(&#39;scrollEnd&#39;, doSomething);
+</code></pre><p>The above code executes the <code>doSomething</code> function every time the content stops scrolling.</p>
+<p>The available types are:</p>
+<ul>
+<li><strong>beforeScrollStart</strong>, executed as soon as user touches the screen but before the scrolling has initiated.</li>
+<li><strong>scrollCancel</strong>, scroll initiated but didn&#39;t happen.</li>
+<li><strong>scrollStart</strong>, the scroll started.</li>
+<li><strong>scroll</strong>, the content is scrolling. Available only in <code>scroll-probe.js</code> edition. See <a href="#onscroll">onScroll event</a>.</li>
+<li><strong>scrollEnd</strong>, content stopped scrolling.</li>
+<li><strong>flick</strong>, user flicked left/right.</li>
+<li><strong>zoomStart</strong>, user started zooming.</li>
+<li><strong>zoomEnd</strong>, zoom ended.</li>
+</ul>
+<h2 id="onscroll">onScroll event</h2>
+
+<p>The <code>scroll</code> event is available on <strong>iScroll probe edition</strong> only (<code>iscroll-probe.js</code>). The probe behavior can be altered through the <code>probeType</code> option.</p>
+<h3 id="-small-options-small-probetype"><small>options.</small>probeType</h3>
+<p>This regulates the probe aggressiveness or the frequency at which the <code>scroll</code> event is fired. Valid values are: <code>1</code>, <code>2</code>, <code>3</code>. The higher the number the more aggressive the probe. The more aggressive the probe the higher the impact on the CPU.</p>
+<p><code>probeType: 1</code> has no impact on performance. The <code>scroll</code> event is fired only when the scroller is not busy doing its stuff.</p>
+<p><code>probeType: 2</code> always executes the <code>scroll</code> event except during momentum and bounce. This resembles the native <code>onScroll</code> event.</p>
+<p><code>probeType: 3</code> emits the <code>scroll</code> event with a to-the-pixel precision. Note that the scrolling is forced to <code>requestAnimationFrame</code> (ie: <code>useTransition:false</code>).</p>
+<p>Please see the <a href="http://lab.cubiq.org/iscroll5/demos/probe/" target="_blank">probe demo</a>.</p>
+<h2 id="key-bindings">Key bindings</h2>
+
+<p>You can activate support for keyboards and remote controls with the <code>keyBindings</code> option. By default iScroll listens to the arrow keys, page up/down, home/end but they are (wait for it) totally customizable.</p>
+<p>You can pass an object with the list of key codes you want iScroll to react to.</p>
+<p>The default values are as follow:</p>
+<pre><code>keyBindings: {
+    pageUp: 33,
+    pageDown: 34,
+    end: 35,
+    home: 36,
+    left: 37,
+    up: 38,
+    right: 39,
+    down: 40
+}
+</code></pre><p>You can also pass a string (eg: <code>pageUp: &#39;a&#39;</code>) and iScroll will convert it for you. You could just think of a key code and iScroll would read it out of your mind.</p>
+<h2 id="scroller-info">Useful scroller info</h2>
+
+<p>iScroll stores many useful information that you can use to augment your application.</p>
+<p>You will probably find useful:</p>
+<ul>
+<li><strong>myScroll.x/y</strong>, current position</li>
+<li><strong>myScroll.directionX/Y</strong>, last direction (-1 down/right, 0 still, 1 up/left)</li>
+<li><strong>myScroll.currentPage</strong>, current snap point info</li>
+</ul>
+<p>These pieces of information may be useful when dealing with custom events. Eg:</p>
+<pre><code>myScroll = new IScroll(&#39;#wrapper&#39;);
+myScroll.on(&#39;scrollEnd&#39;, function () {
+    if ( this.x &lt; -1000 ) {
+        // do something
+    }
+});
+</code></pre><p>The above executes some code if the <code>x</code> position is lower than -1000px when the scroller stops. Note that I used <code>this</code> instead of <code>myScroll</code>, you can use both of course, but iScroll passes itself as <code>this</code> context when firing custom event functions.</p>
+<h2 id="destroy">Destroy</h2>
+
+<p>The public <code>destroy()</code> method can be used to free some memory when the iScroll is not needed anymore.</p>
+<pre><code>myScroll.destroy();
+myScroll = null;
+</code></pre><h2 id="contributing">Contributing and CLA</h2>
+
+<p>If you want to contribute to the iScroll development, before I can accept your submission I have to ask you to sign the <a href="http://cubiq.org/iscroll/cla/" target="_blank">Contributor License Agreement</a>. Unfortunately that is the only way to enforce the openness of the script.</p>
+<p>As an end user you have to do nothing of course. Actually the CLA ensures that nobody will even come after you asking for your first born for using the iScroll.</p>
+<p>Please note that pull requests may take some time to be accepted. Testing iScroll is one of the most time consuming tasks of the project. iScroll works from desktop to smartphone, from tablets to smart TVs. I do not have physical access to all the testing devices, so before I can push a change I have to make sure that the new code is working everywhere.</p>
+<p>Critical bugs are usually applied very quickly, but enhancements and coding style changes have to pass a longer review phase. <em>Remember that this is still a side project for me.</em></p>
+<h2 id="whos">Who is using iScroll</h2>
+
+<p>It&#39;s impossible to track all the websites and applications that use the iScroll. It has been spotted on: Apple, Microsoft, People, LinkedIn, IKEA, Nike, Playboy, Bose, and countless others.</p>
+<h2 id="license">License (MIT)</h2>
+
+
+<p>Copyright (c) 2014 Matteo Spinelli, <a href="http://cubiq.org/" target="_blank">cubiq.org</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./indicator.html" class="navigation navigation-prev " aria-label="Previous page: 指示器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./zoom.html" class="navigation navigation-next " aria-label="Next page: 缩放"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
