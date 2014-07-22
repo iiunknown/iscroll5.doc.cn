@@ -4,59 +4,65 @@
 
 ### <small>options.</small>bindToWrapper
 
-The `move` event is normally bound to the document and not the scroll container. When you move the cursor/finger out of the wrapper the scrolling keeps going. This is usually what you want, but you can also bind the move event to wrapper itself. Doing so as soon as the pointer leaves the container the scroll stops.
+`move`事件通常绑定到文档而不是滚动器容器（wrapper）。当你在滚动器容器（wrapper）外移动光标/手指，滚动条将不断滚动。这通常是你想要的,但是你也可以绑定事件转移到滚动器容器（wrapper）本身。这样做一旦指针离开了容器，滚动就会停止。
 
 Default: `false`
+默认值：`false`
 
 ### <small>options.</small>bounceEasing
 
-Easing function performed during the bounce animation. Valid values are: `'quadratic'`, `'circular'`, `'back'`, `'bounce'`, `'elastic'`. See the [bounce easing demo](http://lab.cubiq.org/iscroll5/demos/bounce-easing/), drag the scroller down and release.
+擦除功能在弹跳动画过程中执行。有效的值为：`'quadratic'`, `'circular'`, `'back'`, `'bounce'`, `'elastic'`. 参见[bounce easing demo](http://lab.cubiq.org/iscroll5/demos/bounce-easing/)，往下拽滚动条然后释放。
 
 `bounceEasing` is a bit smarter than that. You can also feed a custom easing function, like so:
+`bounceEasing`比上面的示例更强大。你可以自定义一个擦出功能，比如：
 
-    bounceEasing: {
-        style: 'cubic-bezier(0,0,1,1)',
-        fn: function (k) { return k; }
-    }
+```js
+bounceEasing: {
+    style: 'cubic-bezier(0,0,1,1)',
+    fn: function (k) { return k; }
+}
+```
 
-The above would perform a linear easing. The `style` option is used every time the animation is executed with CSS transitions, `fn` is used with `requestAnimationFrame`. If the easing function is too complex and can't be represented by a cubic bezier just pass `''` (empty string) as `style`.
+上面这个示例将执行一个线性的擦出。`style`选项将在在每次动画执行时使用CSS转场执行。`fn`和`requestAnimationFrame`一起使用。如果一个擦出功能太复杂，不能由一个三次贝塞尔曲线展现，那么为`style`属性传递 `''` （空字符串）。
 
-Note that `bounce` and `elastic` can't be performed by CSS transitions.
+注意：`bounce` 和 `elastic`这两种方式不能被CSS转场执行。
 
 Default: `'circular'`
+默认值：`'circular'`
 
 ### <small>options.</small>bounceTime
 
-Duration in millisecond of the bounce animation.
+弹跳动画的持续时间，使用毫秒级。
 
-Default: `600`
+默认值：`600`
 
 ### <small>options.</small>deceleration
 
-This value can be altered to change the momentum animation duration/speed. Higher numbers make the animation shorter. Sensible results can be experienced starting with a value of `0.01`, bigger than that basically doesn't make any momentum at all.
+这个值可以改变改变动画的势头持续时间/速度。更高的数字使动画更短。你可以从`0.01`开始去体验，这个值和基本的值比较，基本上没有动能。
 
-Default: `0.0006`
+默认值：`0.0006`
 
 ### <small>options.</small>mouseWheelSpeed
 
-Set the speed of the mouse wheel.
+设置鼠标滚轮滚动的速度值。
 
-Default: `20`
+默认值：`20`
 
 ### <small>options.</small>preventDefaultException
 
-These are all the exceptions when `preventDefault()` would be fired anyway despite the **preventDefault** option value.
+调用`preventDefault()`方法时所有的异常将被触发，尽管**preventDefault**设置了值。
 
-This is a pretty powerful option, if you don't want to `preventDefault()` on all elements with *formfield* class name for example, you could pass the following:
+这是一个强大的选项，如果你想为所有包含*formfield*样式名称的元素上应用`preventDefault()`方法，你可以设置为下面的值：
+```js
+preventDefaultException: { className: /(^|\s)formfield(\s|$)/ }
+```
 
-    preventDefaultException: { className: /(^|\s)formfield(\s|$)/ }
-
-Default: `{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ }`.
+默认值：`{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ }`.
 
 ### <small>options.</small>resizePolling
 
-When you resize the window iScroll has to recalculate elements position and dimension. This might be a pretty daunting task for the poor little fella. To give it some rest the polling is set to 60 milliseconds.
+当你改变窗口的大小iScroll重新计算元素的位置和尺寸。这可能是一个相当艰巨的任务。轮询设置为60毫秒。
 
-By reducing this value you get better visual effect but the script becomes more aggressive on the CPU. The default value seems a good compromise.
+通过降低这个值你获得更好的视觉效果，但会占用更多的CPU资源。默认值是一个很好的折中。
 
-Default: `60`
+默认值：`60`
