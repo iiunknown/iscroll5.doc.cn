@@ -13,8 +13,7 @@ Default: `false`
 
 擦除功能在弹跳动画过程中执行。有效的值为：`'quadratic'`, `'circular'`, `'back'`, `'bounce'`, `'elastic'`. 参见[bounce easing demo](http://lab.cubiq.org/iscroll5/demos/bounce-easing/)，往下拽滚动条然后释放。
 
-`bounceEasing` is a bit smarter than that. You can also feed a custom easing function, like so:
-`bounceEasing`比上面的示例更强大。你可以自定义一个擦出功能，比如：
+`bounceEasing`比上面的示例更强大。你可以自定义一个消除的方式，比如：
 
 ```js
 bounceEasing: {

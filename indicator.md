@@ -56,14 +56,7 @@ indicators: {
 
 这几个选项和我们已经介绍过的[滚动条](#scrollbars)中的一样，在这里不重复介绍。
 
-<div class="important">
-<p><strong>Do not cross the streams. It would be bad!</strong> Do not mix the scrollbars syntax (<code>options.scrollbars</code>, <code>options.fadeScrollbars</code>, <code>options.interactiveScrollbars</code>, ...) with the indicators! Use one or the other.</p>
-</div>
-<div class="important">
-<p><strong>Do not cross the streams. It would be bad!</strong> Do not mix the scrollbars syntax (<code>options.scrollbars</code>, <code>options.fadeScrollbars</code>, <code>options.interactiveScrollbars</code>, ...) with the indicators! Use one or the other.</p>
-</div>
-
-请参考[迷你地图示例](http://lab.cubiq.org/iscroll5/demos/minimap/)，你将看到`indicators`选项的神奇力量。
+请参考[迷你地图示例](http://lab.cubiq.org/iscroll5/demos/minimap/)，你将体验`indicators`选项的神奇力量。
 
 你应该已经注意到选项`indicators`是复数，是的，实际上，传递一个对象数组你可以得到一个虚拟的无限大小的指示器。我不知道你是否需要，但是，这里我是想你介绍参数设置，所以要提及此。
 

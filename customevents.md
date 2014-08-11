@@ -29,13 +29,12 @@ The `scroll` event is available on **iScroll probe edition** only (`iscroll-prob
 
 ### <small>options.</small>probeType
 
-This regulates the probe aggressiveness or the frequency at which the `scroll` event is fired. Valid values are: `1`, `2`, `3`. The higher the number the more aggressive the probe. The more aggressive the probe the higher the impact on the CPU.
+这个属性是调节在`scroll`事件触发中探针的活跃度或者频率。有效值有：`1`, `2`, `3`。数值越高表示更活跃的探测。探针活跃度越高对CPU的影响就越大。
 
-`probeType: 1` has no impact on performance. The `scroll` event is fired only when the scroller is not busy doing its stuff.
+`probeType: 1` 对性能没有影响。`scroll`事件只有在滚动条不繁忙的时候触发。
+`probeType: 2` 除了在势能和反弹范围内，将在`scroll`事件周期内一直执行。这类似于原生的`onScroll`事件。
 
-`probeType: 2` always executes the `scroll` event except during momentum and bounce. This resembles the native `onScroll` event.
+`probeType: 3` 像素级的触发`scroll`事件。注意，此时滚动只关注`requestAnimationFrame` (即：`useTransition:false`).
 
-`probeType: 3` emits the `scroll` event with a to-the-pixel precision. Note that the scrolling is forced to `requestAnimationFrame` (ie: `useTransition:false`).
-
-Please see the [probe demo](http://lab.cubiq.org/iscroll5/demos/probe/).
+请参考 [probe demo](http://lab.cubiq.org/iscroll5/demos/probe/).
 

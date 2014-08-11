@@ -1,22 +1,22 @@
+##滚动条信息
 
-<h2 id="scroller-info">Useful scroller info</h2>
+iScroll存储了很多有用的信息，您可以使用它们来增强您的应用。
 
-iScroll stores many useful information that you can use to augment your application.
+你可能会发现有用的：
 
-You will probably find useful:
+* **myScroll.x/y**，当前位置
+* **myScroll.directionX/Y**，最后的方向 (-1 down/right, 0 still, 1 up/left)
+* **myScroll.currentPage**，当前对齐捕获点
 
-* **myScroll.x/y**, current position
-* **myScroll.directionX/Y**, last direction (-1 down/right, 0 still, 1 up/left)
-* **myScroll.currentPage**, current snap point info
-
-These pieces of information may be useful when dealing with custom events. Eg:
-
-    myScroll = new IScroll('#wrapper');
-    myScroll.on('scrollEnd', function () {
-        if ( this.x < -1000 ) {
-            // do something
-        }
-    });
+下面是关于处理时间的代码示例：
+```js
+myScroll = new IScroll('#wrapper');
+myScroll.on('scrollEnd', function () {
+    if ( this.x < -1000 ) {
+        // do something
+    }
+});
+```
 
 The above executes some code if the `x` position is lower than -1000px when the scroller stops. Note that I used `this` instead of `myScroll`, you can use both of course, but iScroll passes itself as `this` context when firing custom event functions.
 
