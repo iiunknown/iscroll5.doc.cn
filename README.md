@@ -1,4 +1,7 @@
 # iScroll 5 API 中文版
+
+[![Build Status](https://www.gitbook.io/button/status/book/iiunknown/iscroll-5-api-cn)](https://www.gitbook.io/book/iiunknown/iscroll-5-api-cn/activity)
+
 ## 前言
 最近项目上需要使用iScroll，在中文圈里找了找，只找到了iScroll 4的中文版API。加上最近开始使用github（准确说，github账号是很多年前注册的，一直在企业应用里摸爬滚打，荒废了账号很长时间，是理由吗？是理由吗？），出于对开源社区的敬意，我突然觉得应该做点啥，于是先挑一个简单点儿的，把iScroll 5的API翻译一下，方便中文用户使用。
 
@@ -20,3 +23,4 @@ iScroll不仅仅是 滚动。它可以处理任何需要与用户进行移动交
 * 动画可以使用用户自定义的擦出功能（反弹'bounce'，弹性'elastic'，回退'back'，...）。
 * 你可以很容易的挂靠大量的自定义事件（onBeforeScrollStart, *
 * 开箱即用的多平台支持。从很老的安卓设备到最新的iPhone，从Chrome浏览器到IE浏览器。
+
