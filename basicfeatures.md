@@ -13,7 +13,7 @@
 默认属性：`false`
 
 ### <small>options.</small>disableMouse<br/><small>options.</small>disablePointer<br/><small>options.</small>disableTouch
-默认情况下，iScroll肩痛所有的指针事件，并且对这些事件中第一个被触发的做出反应。这看上去是浪费资源，但是在大量的浏览器/设备上兼容，特定的事件侦测证明是无效的，所以*listen-to-all*是一个安全的做法。
+默认情况下，iScroll监听所有的指针事件，并且对这些事件中第一个被触发的做出反应。这看上去是浪费资源，但是在大量的浏览器/设备上兼容，特定的事件侦测证明是无效的，所以*listen-to-all*是一个安全的做法。
 
 如果你有一种设备侦测的内部机制，或者你知道你的脚本将在什么地方运行，你可以把你不需要的事件禁用（鼠标，指针或者触摸事件）。
 
