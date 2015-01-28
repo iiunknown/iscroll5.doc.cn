@@ -1,6 +1,6 @@
 # iScroll 5 API 中文版
 
-[Gitbook发布版本](https://technet.microsoft.com/zh-CN/library/cc263445(v=office.14).aspx)
+[Gitbook发布版本](http://iiunknown.gitbooks.io/iscroll-5-api-cn/content/)
 
 [![Build Status](https://www.gitbook.io/button/status/book/iiunknown/iscroll-5-api-cn)](https://www.gitbook.io/book/iiunknown/iscroll-5-api-cn/activity)
 
